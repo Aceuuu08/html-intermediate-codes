@@ -60,7 +60,7 @@
 <body>
     <div class="container">
         <h1>Sign Up</h1>
-        <form action="#" method="post">
+        <form action="#" method="post" id="signup1">
             <div class="form-group">
                 <label for="firstname">First Name:</label>
                 <input type="text" id="firstname" name="firstname" required>
@@ -94,7 +94,7 @@
     <!-- JavaScript to capture form submission -->
 <script>
 
-    document.getElementById("form1").addEventListener("submit", function(event) {
+    document.getElementById("signup1").addEventListener("submit", function(event) {
      ev2ent.preventDefault(); // Prevent the form from actually submitting
      // Access and display form data
      var form = event.target;
