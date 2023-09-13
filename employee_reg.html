@@ -104,5 +104,21 @@
             <button type="submit">Submit</button>
         </form>
     </div>
+
+    <!-- JavaScript to capture form submission -->
+    <script>
+
+        document.getElementById("registration-form").addEventListener("submit", function(event) {
+         ev2ent.preventDefault(); // Prevent the form from actually submitting
+         // Access and display form data
+         var form = event.target;
+         var formData = new FormData(form);
+         // Iterate through form data and log it (fordebugging)
+         for (var pair of formData.entries()) {
+         console.log(pair[0] + ": " + pair[1]);
+            
+            }
+         });
+         </script>
 </body>
 </html>
